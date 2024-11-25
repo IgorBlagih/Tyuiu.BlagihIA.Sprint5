@@ -6,13 +6,13 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = Path.GetTempFileName();
+            string path = "OutPutFileTask0.txt";
             x = 4;
-            double res = (-4 ^ 3) + (4 * 4 ^ 2) - ((3 / 2) * 4);
+            double res = Math.Pow(x,3) + 4 * Math.Pow(x,2) - (3/2 *x);
             res = Math.Round(res);
             File.AppendAllText(path, x.ToString());
             return path;
 
         }
-    } 
+    }
 }
