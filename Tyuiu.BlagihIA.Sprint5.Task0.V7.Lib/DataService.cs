@@ -8,8 +8,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7.Lib
         {
             string path = Path.GetTempFileName();
             x = 4;
-            double res = Math.Pow(x,3) + 4 * Math.Pow(x,2) - (3/2 *x);
-            res = Math.Round(res);
+            int res = - (x^3) + 4*(x^2) -(3/2) * x;
             File.AppendAllText(path, x.ToString());
             return path;
 
