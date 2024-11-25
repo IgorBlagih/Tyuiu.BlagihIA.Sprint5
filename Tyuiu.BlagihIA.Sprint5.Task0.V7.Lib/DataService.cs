@@ -14,5 +14,5 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7.Lib
             return path;
 
         }
-    }
+    } 
 }

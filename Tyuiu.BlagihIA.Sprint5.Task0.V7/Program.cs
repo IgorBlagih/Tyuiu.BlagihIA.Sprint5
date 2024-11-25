@@ -14,7 +14,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7
             Console.WriteLine("* Вариант #7                                                              *");
             Console.WriteLine("* Выполнил: Благих Игорь Александрович | ИИПб-24-2                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *"); 
             Console.WriteLine("* Дано выражение, вычислить его значение при x = 4, результат сохранить   *");
             Console.WriteLine("* в текстовый файл OutPutFileTask0.txt и вывести на консоль. Округлить    *");
             Console.WriteLine("* до трёх знаков после запятой.                                           *");
