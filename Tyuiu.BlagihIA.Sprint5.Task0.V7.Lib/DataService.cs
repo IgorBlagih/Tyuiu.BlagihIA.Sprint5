@@ -6,7 +6,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = "OutPutFileTask0.txt";
+            string path = Path.GetTempFileName();
             x = 4;
             double res = Math.Pow(x,3) + 4 * Math.Pow(x,2) - (3.0/2.0 *4);
             res = Math.Round(res);
