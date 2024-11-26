@@ -23,6 +23,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task1.V16.Lib
             for (int x = startValue; x <= stopValue; x++)
             {
                 y = Math.Sin(x) + (2 * x / 3) - Math.Cos(x) * 4 * x;
+                y= Math.Round(y,2); 
                 if (double.IsNaN(y))
                 {
                     y = 0;
@@ -30,14 +31,14 @@ namespace Tyuiu.BlagihIA.Sprint5.Task1.V16.Lib
                 stry = Convert.ToString(y);
 
 
-                if (x < startValue)
+                if (x < stopValue)
                 {
-                    File.AppendAllText(path, stry + Environment.NewLine);
+                    File.AppendAllText(path, $"{stry}" + Environment.NewLine);
 
                 }
                 else
                 {
-                    File.AppendAllText(path, stry);
+                    File.AppendAllText(path, $"{stry}");
                 }
                 
             }
