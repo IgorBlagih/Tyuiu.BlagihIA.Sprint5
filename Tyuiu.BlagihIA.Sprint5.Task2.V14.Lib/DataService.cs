@@ -41,7 +41,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task2.V14.Lib
 
                     if (j != cols - 1)
                     {
-                        str = str + matrix[i, j] + " ";
+                        str = str + matrix[i, j] + ";";
                     }
                     else
                     {
