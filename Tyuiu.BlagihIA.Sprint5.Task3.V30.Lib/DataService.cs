@@ -18,7 +18,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task3.V30.Lib
 
             double res = Math.Round(((Math.Pow(Convert.ToDouble(x) ,3) - 1) / (4 * x ^ 2)), 3);
 
-            using(BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate)))
+            using(BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Append)))
             {
                 writer.Write(BitConverter.GetBytes(res));
             }
