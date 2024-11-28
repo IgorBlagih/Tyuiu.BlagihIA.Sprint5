@@ -33,8 +33,9 @@ namespace Tyuiu.BlagihIA.Sprint5.Task3.V30
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res);
 
-            Console.WriteLine("Создан!");
-
+            
+            double wt = Math.Round((Math.Pow(x, 3) - 1) / (4 * Math.Pow(x, 2)),3);
+            Console.WriteLine(wt);
 
             Console.ReadKey();
         }

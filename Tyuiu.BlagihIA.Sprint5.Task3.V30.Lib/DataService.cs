@@ -16,11 +16,13 @@ namespace Tyuiu.BlagihIA.Sprint5.Task3.V30.Lib
                 File.Delete(path);
             }
 
-            double res = Math.Round(((Math.Pow(Convert.ToDouble(x) ,3) - 1) / (4 * x ^ 2)), 3);
+            double x1 = Convert.ToDouble(x);
 
-            using(BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Append)))
+            double res = (Math.Pow(x,3) - 1) / (4 * Math.Pow(x, 2));
+            res = Math.Round(res, 3);
+            using(BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate)))
             {
-                writer.Write(res);
+                writer.Write(BitConverter.GetBytes(res));
             }
             return path;
         }
