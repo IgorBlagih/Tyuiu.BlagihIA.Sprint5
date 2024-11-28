@@ -20,7 +20,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task3.V30.Lib
 
             using(BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Append)))
             {
-                writer.Write(BitConverter.GetBytes(res));
+                writer.Write(res);
             }
             return path;
         }
