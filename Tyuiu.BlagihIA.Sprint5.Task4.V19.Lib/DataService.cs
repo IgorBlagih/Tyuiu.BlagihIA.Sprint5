@@ -6,6 +6,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19.Lib
     {
         public double LoadFromDataFile(string path)
         {
+            path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V19.txt");
 
             string strx = File.ReadAllText(path);
             
