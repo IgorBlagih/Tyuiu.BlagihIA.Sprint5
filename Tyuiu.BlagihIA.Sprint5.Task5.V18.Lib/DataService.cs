@@ -7,21 +7,15 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Lib
         public double LoadFromDataFile(string path)
         {
             double res = 1;
-            string strx = File.ReadAllText(path);
-            strx = strx.Replace(".", ",");
-            string[] lines = strx.Split(" ");
-            foreach (string str in lines)
+            using(StreamReader reader = new StreamReader(path))
             {
-                double x = Math.Round(Convert.ToDouble(str), 3);
-
-                res = res * x;
+                string line = reader.ReadLine();
+                while (line != null)
+                {
+                    res = res * Convert.ToDouble(line);
+                }
             }
-            
-
-
             return res;
-
-
         }
     }
 }
