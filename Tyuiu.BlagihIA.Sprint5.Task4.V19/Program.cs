@@ -16,8 +16,8 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19
             Console.WriteLine("* Выполнил: Благих Игорь Александрович | ИИПб-24-2                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан файл С:\\DataSprint5\\InPutDataFileTask4V0.txt (файл взять из архива*");
-            Console.WriteLine("* согласно вашему варианту. Создать папку в ручную С:\\DataSprint5\\ и    *");
+            Console.WriteLine("* Дан файл С:DataSprint5InPutDataFileTask4V0.txt (файл взять из архива*");
+            Console.WriteLine("* согласно вашему варианту. Создать папку в ручную С:DataSprint5 и    *");
             Console.WriteLine("* скопировать в неё файл) в котором есть вещественное значение. Прочитать *");
             Console.WriteLine("* значение из файла и подставить вместо Х в формуле Вычислить значение по *");
             Console.WriteLine("* формуле и вернуть полученный результат на консоль.                      *");
