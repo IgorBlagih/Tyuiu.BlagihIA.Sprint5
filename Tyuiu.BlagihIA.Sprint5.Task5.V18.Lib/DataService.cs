@@ -12,8 +12,8 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Lib
                 string line ;
                 while ((line= reader.ReadLine()) != null)
                 {
-                    line.Replace(".", ",");  
-                    res = res * Math.Round(Convert.ToDouble(line),3);
+                    string str = line.Replace(".", ",");  
+                    res = res * Math.Round(Convert.ToDouble(str),3);
                 }
             }
             return res;
