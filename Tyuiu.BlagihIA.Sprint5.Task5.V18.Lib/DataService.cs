@@ -12,7 +12,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Lib
             string[] lines = strx.Split(" ");
             foreach (string str in lines)
             {
-                double x = Convert.ToDouble(str);
+                double x = Math.Round(Convert.ToDouble(str), 3);
 
                 res = res * x;
             }
