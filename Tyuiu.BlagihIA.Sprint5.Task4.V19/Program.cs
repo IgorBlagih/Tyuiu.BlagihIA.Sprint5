@@ -1,4 +1,5 @@
-﻿using Tyuiu.BlagihIA.Sprint5.Task4.V19.Lib;
+﻿using System.IO;
+using Tyuiu.BlagihIA.Sprint5.Task4.V19.Lib;
 namespace Tyuiu.BlagihIA.Sprint5.Task4.V19
 {
     internal class Program
@@ -24,7 +25,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = Path.Combine(Convert.ToString(Path.GetTempPath()), "InPutDataFileTask4V0.txt");
+            string path = Path.Combine("app", "data", "AssesmentData", "C#", "Sprint5Task4", "InPutDataFileTask4V19.txt");
 
 
             Console.WriteLine("***************************************************************************");
