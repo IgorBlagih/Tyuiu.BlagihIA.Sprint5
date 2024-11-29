@@ -25,7 +25,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-           string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V19.txt");
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V19.txt");
 
 
             Console.WriteLine("***************************************************************************");
