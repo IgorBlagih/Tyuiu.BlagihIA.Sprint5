@@ -10,9 +10,10 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Lib
             using(StreamReader reader = new StreamReader(path))
             {
                 string line ;
+                line = line.Replace(".", ",");
                 while ((line= reader.ReadLine()) != null)
                 {
-                    line = line.Replace(".", ",");
+                    
                     res = res * Math.Round(Convert.ToDouble(line),3);
                 }
             }
