@@ -7,14 +7,10 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string direct = System.IO.Path.GetTempPath();
+            string path = Path.Combine(Convert.ToString(Path.GetTempPath()), "OutPutFileTask0.txt");
 
 
-
-            string path = Path.GetTempFileName();
-            string apath = Path.Combine(direct,path);
-
-            FileInfo fileInfo = new FileInfo(apath); 
+            FileInfo fileInfo = new FileInfo(path); 
             bool fileExist= fileInfo.Exists;
             bool wait = true;
             Assert.AreEqual(true, fileExist);
