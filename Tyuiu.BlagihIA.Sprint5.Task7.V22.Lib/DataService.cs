@@ -7,10 +7,19 @@ namespace Tyuiu.BlagihIA.Sprint5.Task7.V22.Lib
         public string LoadDataAndSave(string path)
         {
             string strx = File.ReadAllText(path);
-            int count = 0;
-            strx = strx.Replace("*", "#");
+            char item = '#';
+            foreach(char c in strx) 
+
+            {
+                
+                if (c == '!' || c == ',' || c == '.' || c == '?' || c == '-')
+                {
+                    strx =strx.Replace(c, item);
+                }
+            }
 
             return strx;
         }
     }
 }
+
