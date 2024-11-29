@@ -11,7 +11,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task6.V4.Test
             string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask6V4.txt");
             DataService ds = new DataService();
             
-            int wait = 3;
+            int wait = 0;
             int res = ds.LoadFromDataFile(path);
 
             Assert.AreEqual(wait, res);

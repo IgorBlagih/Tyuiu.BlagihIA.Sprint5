@@ -52,9 +52,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BlagihIA.Sprint5.Task5.V18.Test", "Tyuiu.BlagihIA.Sprint5.Task5.V18.Test\Tyuiu.BlagihIA.Sprint5.Task5.V18.Test.csproj", "{B92E0730-6DF2-45F3-9E0B-F867101C0E66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task6", "Task6", "{91F66446-71CD-43CE-8E78-E3995C9A3CA0}"
-	ProjectSection(SolutionItems) = preProject
-		Tyuiu.BlagihIA.Sprint5.Task5.V18.Test\DataServiceTest.cs = Tyuiu.BlagihIA.Sprint5.Task5.V18.Test\DataServiceTest.cs
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BlagihIA.Sprint5.Task6.V4", "Tyuiu.BlagihIA.Sprint5.Task6.V4\Tyuiu.BlagihIA.Sprint5.Task6.V4.csproj", "{E286F6E9-9D2F-40F5-954D-ED648AA62D5A}"
 EndProject
