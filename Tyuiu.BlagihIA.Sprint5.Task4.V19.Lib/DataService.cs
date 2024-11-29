@@ -10,9 +10,8 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19.Lib
 
             string strx = File.ReadAllText(path);
             
-            int x = Convert.ToInt32(strx);
 
-            double res =Math.Round(Math.Pow( x/Math.Cos(x) , 2) , 3);   
+            double res =Math.Round(Math.Pow(Convert.ToDouble(strx)/ Math.Cos(Convert.ToDouble(strx)) , 2) , 3);   
             return res;
                 
         }
