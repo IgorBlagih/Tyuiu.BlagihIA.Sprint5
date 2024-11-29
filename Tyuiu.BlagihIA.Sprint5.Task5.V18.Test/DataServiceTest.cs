@@ -7,7 +7,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V19.txt");
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask5V18.txt");
 
             FileInfo inf = new FileInfo(path);
             bool ex = inf.Exists;
