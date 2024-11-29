@@ -10,10 +10,14 @@ namespace Tyuiu.BlagihIA.Sprint5.Task6.V4.Lib
             int count = 0;
             foreach (char c in strx)
             {
-                if (char.IsUpper(c))
+                if ((c >= 'А') && (c <= 'Я'))
                 {
-                    count ++;
+                    if (char.IsUpper(c))
+                    {
+                        count++;
+                    }
                 }
+                   
             }
             return count;
         }
