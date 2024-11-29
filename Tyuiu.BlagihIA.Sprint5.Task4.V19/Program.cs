@@ -25,7 +25,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = Path.Combine("app", "data", "AssesmentData", "C#", "Sprint5Task4", "InPutDataFileTask4V19.txt");
+           string path = Path.Combine("C:", "data", "AssesmentData", "C#", "Sprint5Task4", "InPutDataFileTask4V19.txt");
 
 
             Console.WriteLine("***************************************************************************");
@@ -33,7 +33,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19
             Console.WriteLine("***************************************************************************");
 
             double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Ответ" + res);
+            Console.WriteLine("Ответ " + res);
 
 
 
