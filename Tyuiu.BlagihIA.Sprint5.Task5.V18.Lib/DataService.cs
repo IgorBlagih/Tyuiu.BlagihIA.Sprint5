@@ -13,7 +13,11 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Lib
                 while ((line= reader.ReadLine()) != null)
                 {
                     string str = line.Replace(".", ",");  
-                    res = res * Math.Round(Convert.ToDouble(str),3);
+                    
+                    while ((str = reader.ReadLine()) != null)
+                    {
+                        res = res * Math.Round(Convert.ToDouble(str), 3);
+                    }
                 }
             }
             return res;
