@@ -10,7 +10,7 @@ namespace Tyuiu.BlagihIA.Sprint5.Task0.V7.Test
             string path = Path.Combine(Convert.ToString(Path.GetTempPath()), "OutPutFileTask0.txt");
 
 
-            FileInfo fileInfo = new FileInfo(path); 
+            FileInfo fileInfo = new FileInfo(path);  
             bool fileExist= fileInfo.Exists;
             bool wait = true;
             Assert.AreEqual(true, fileExist);
