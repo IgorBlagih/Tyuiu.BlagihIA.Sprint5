@@ -9,9 +9,19 @@ namespace Tyuiu.BlagihIA.Sprint5.Task5.V18.Lib
             double res = 1;
             string strx = File.ReadAllText(path);
             strx = strx.Replace(".", ",");
-            double x = Convert.ToDouble(strx);
-            res = res* x;
+            string[] lines = strx.Split(" ");
+            foreach (string str in lines)
+            {
+                double x = Convert.ToDouble(str);
+
+                res = res * x;
+            }
+            
+
+
             return res;
+
+
         }
     }
 }
