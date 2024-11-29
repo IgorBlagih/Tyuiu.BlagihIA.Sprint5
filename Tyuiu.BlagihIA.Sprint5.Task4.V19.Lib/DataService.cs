@@ -6,12 +6,12 @@ namespace Tyuiu.BlagihIA.Sprint5.Task4.V19.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            
-
+           
             string strx = File.ReadAllText(path);
-            
 
-            double res =Math.Round(Math.Pow(Convert.ToDouble(strx)/ Math.Cos(Convert.ToDouble(strx)) , 2) , 3);   
+            double x = Convert.ToDouble(strx);
+
+            double res = Math.Round(Math.Pow(x/ Math.Cos(x) , 2) , 3);   
             return res;
                 
         }
